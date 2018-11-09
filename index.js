@@ -8,7 +8,7 @@ function nowServing(katzDeliLine) {
   if (katzDeliLine.length !== 0) {
     return `Currently serving ${katzDeliLine.shift()}.`;
   } else {
-    return "There is nobody waiting to be served!"
+    return "There is nobody waiting to be served!";
   }
 }
 
@@ -23,9 +23,9 @@ function currentLine(katzDeliLine) {
     let curPerson = katzDeliLine[i];
     let curPlaceInLine = i + 1;
     if (i < katzDeliLine.length - 1) {
-      greeting += `${curPlaceInLine}. ${curPerson}, `
+      greeting += `${curPlaceInLine}. ${curPerson}, `;
     }  else {
-      greeting += `${curPlaceInLine}. ${curPerson}`
+      greeting += `${curPlaceInLine}. ${curPerson}`;
     }
   }
   return greeting;
